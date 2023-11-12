@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
 
 * {
@@ -15,6 +15,10 @@ html {
     display: grid;
     grid-template-columns: 1fr 2fr;
 } 
+
+a {
+    color: white;
+}
 
 a:visited {
     color: white;
@@ -48,14 +52,108 @@ a:visited {
     justify-content: center;
     position: relative;
     width: 100%;
-    top: -900px;
+    top: -850px;
+    padding: 20px 0px;
     /* left: 50px; */
 }
 
 #logo img {
-    width: 40%;
+    width: 20%;
 }
 
 #odin {
-    font-size: 6rem;
+    font-size: 5rem;
+}
+
+#signup-form {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+
+.form-inputs{
+    background-color: #fff;
+    padding: 20px 0px 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.header p {
+    padding-left: 50px;
+    width: 80%;
+}
+
+button {
+    margin: 20px 0px 10px 0px;
+    background-color: #d9820e;
+    border: none;
+    padding: 10px 60px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+button:disabled{
+    background-color: #885008;
+}
+
+#login-link {
+    color: #d9820e;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#form-title { 
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+}
+
+#footer {
+    padding-left: 50px;
+}
+
+.form-inputs > div {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.form-inputs > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs label {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.form-inputs input {
+    font-size: 1.1rem;
+    padding: 3px 3px;
+}
+
+input:focus {
+    outline: 1px solid #d9820e;
+    border: 2px solid #d9820e;
+}
+
+input:invalid {
+    outline: 1px solid red;
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-weight: 600;
 }

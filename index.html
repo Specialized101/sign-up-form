@@ -11,15 +11,59 @@
     <div id="container">
         <div id="side">
             <img src="./bg-image.jpg" alt="Background image with lots of money">
-            <p>Photo by <a href="https://unsplash.com/fr/@omilaev">Igor Omilaev</a> on <a href="https://unsplash.com/fr/photos/une-pile-dargent-posee-sur-une-table-M7iMdnG4R_g">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/fr/@omilaev" target="_blank">Igor Omilaev</a> on <a href="https://unsplash.com/fr/photos/une-pile-dargent-posee-sur-une-table-M7iMdnG4R_g" target="_blank">Unsplash</a></p>
             <div id="logo">
                 <img src="./odin-lined.png" alt="Odin Logo">
                 <span id="odin">ODIN</span>
             </div>
         </div>
-        <div id="form">
-            <form id="signup-form" action="">
-                <input type="text">
+        <div id="signup-form">
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <br>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <form action="" method="post">
+                <div class="form-inputs">
+                    <p id="form-title">Let's do this!</p>
+                    <div>
+                        <div>
+                            <label for="fname">First Name*</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name*</label>
+                            <input type="text" id="lname" name="lname" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password*</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password*</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div id="footer">
+                    <button id="submit-btn" type="submit" disabled>Create Account</button>
+                    <p>Already have an account? <a id="login-link" href="#">Log in</a></p>
+                </div>
             </form>
         </div>
     </div>
